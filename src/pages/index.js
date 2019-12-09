@@ -1,42 +1,21 @@
 import React from "react"
+import { Link } from "gatsby"
 
-//Style
-import mainStyle from "../styles/main.module.scss"
-import projectSectionStyle from "../styles/projectSection.module.scss"
+import Layout from "../components/layout"
+import Image from "../components/image"
+import SEO from "../components/seo"
 
-//Componenets
-import Socialicon from "../components/Socialicon"
-import ProjectTeaser from "../components/ProjectTeaser"
-
-//Assets
-import GithubIcon from "../assets/github.svg"
-import LinkedinIcon from "../assets/linkedin.svg"
-import MailIcon from "../assets/mail.svg"
-
-const Index = () => (
-  <div>
-    <div className={mainStyle.wrapper}>
-      <div>
-        <h1 className={mainStyle.title}>askAttilla</h1>
-        <div className={mainStyle.iconWrap}>
-          <Socialicon link="#" title="Github" src={GithubIcon}></Socialicon>
-          <Socialicon link="#" title="LinkedIn" src={LinkedinIcon}></Socialicon>
-          <Socialicon link="#" title="Mail" src={MailIcon}></Socialicon>
-        </div>
-      </div>
+const IndexPage = () => (
+  <Layout>
+    <SEO title="Home" />
+    <h1>Hi people</h1>
+    <p>Welcome to your new Gatsby site.</p>
+    <p>Now go build something great.</p>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+      <Image />
     </div>
-    <div className={projectSectionStyle.container}>
-      <ProjectTeaser title="Personal website" focus="JS">
-        <p className={projectSectionStyle.description}></p>
-      </ProjectTeaser>
-      <ProjectTeaser title="Slide puzzle game" focus="Python">
-        <p className={projectSectionStyle.description}></p>
-      </ProjectTeaser>
-      <ProjectTeaser title="Website for Steinhuset" focus="HTML/CSS">
-        <p className={projectSectionStyle.description}></p>
-      </ProjectTeaser>
-    </div>
-  </div>
+    <Link to="/page-2/">Go to page 2</Link>
+  </Layout>
 )
 
-export default Index
+export default IndexPage

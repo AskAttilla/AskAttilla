@@ -5,6 +5,7 @@ import menuStyles from "../styles/menu.module.sass"
 
 import HomeIcon from "../assets/svg/home.svg"
 import ProjectsIcon from "../assets/svg/list.svg"
+
 import ContactIcon from "../assets/svg/mail.svg"
 
 const Menu = () => (
@@ -17,7 +18,7 @@ const Menu = () => (
             className={menuStyles.mobileMenuLink}
             activeStyle={{
               borderTop: "2px solid orange",
-              marginBottom: "2px",
+              paddingBottom: "2px",
             }}
           >
             <ProjectsIcon className={menuStyles.linkIcon} />
@@ -30,7 +31,7 @@ const Menu = () => (
             className={menuStyles.mobileMenuLink}
             activeStyle={{
               borderTop: "2px solid orange",
-              marginBottom: "2px",
+              paddingBottom: "2px",
             }}
           >
             <HomeIcon className={menuStyles.linkIcon} />
@@ -43,7 +44,7 @@ const Menu = () => (
             className={menuStyles.mobileMenuLink}
             activeStyle={{
               borderTop: "2px solid orange",
-              marginBottom: "2px",
+              paddingBottom: "2px",
             }}
           >
             <ContactIcon className={menuStyles.linkIcon} />

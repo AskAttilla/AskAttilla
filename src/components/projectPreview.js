@@ -7,13 +7,11 @@ const projectReview = props => {
   return (
     <div className={projectReviewStyles.container}>
       <div className={projectReviewStyles.previewImage}>
-        <img src={props.picture} />
+        <img src={props.picture} alt={props.title} />
       </div>
       <div className={projectReviewStyles.wrap}>
         <h1 className={projectReviewStyles.title}>{props.title}</h1>
-        <p>
-          {props.tag1}, {props.tag2}
-        </p>
+        <p>{props.tags}</p>
         <div className={projectReviewStyles.iconWrap}>
           <IconSocial
             website=""

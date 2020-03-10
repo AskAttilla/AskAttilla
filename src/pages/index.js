@@ -10,7 +10,7 @@ const IndexPage = () => (
   <Layout>
     <div className={indexStyles.container}>
       <div className={indexStyles.logoWrap}>
-        <img src={logoImg} />
+        <img src={logoImg} alt="AskAttilla logo" />
       </div>
 
       <div className={indexStyles.icons}>

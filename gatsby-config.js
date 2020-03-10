@@ -14,17 +14,17 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
+        icon: `src/assets/images/favicon_test.png`,
       },
     },
-
     `gatsby-plugin-sass`,
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /svg/ 
-        }
-      }
+          include: /svg/,
+        },
+      },
     },
   ],
 }

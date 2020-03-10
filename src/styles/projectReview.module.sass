@@ -1,14 +1,32 @@
 .container
-    display: flex 
-    .title
-        font-size: 25px
-        text-transform: uppercase
-    p
-        color: grey
+    display: flex
+    align-items: center
+    justify-content: space-around
+    margin: 0 10px
 
-    .iconWrap
-        margin-top: 10px
-        display: flex
+    .previewImage 
+        width: 45%
+        height: auto
+        img
+            width: 100%
+            height: auto
+    .wrap
+        width: 45%
+        .title
+            font-size: 25px
+            text-transform: uppercase
+            
+        p
+            color: grey
+            padding-top: 5px
 
-        .icon
-            background: blue
+        .iconWrap
+            margin-top: 10px
+            display: flex
+
+
+@media ( max-width: 600px ) 
+    .container
+        .wrap
+            .title
+                font-size: 20px

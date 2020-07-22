@@ -1,8 +1,12 @@
 import React from "react"
-import { Title } from "./Section_style"
+import { Title, TitleCover } from "./Section_style"
 
 const SectionTitle = ({ children }) => {
-  return <Title>{children}</Title>
+  return (
+    <TitleCover>
+      <Title>{children}</Title>
+    </TitleCover>
+  )
 }
 
 export default SectionTitle

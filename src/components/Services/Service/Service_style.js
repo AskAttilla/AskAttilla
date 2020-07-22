@@ -37,7 +37,7 @@ export const Container = styled.div`
 `
 
 export const StyledIcon = styled(FontAwesomeIcon)`
-  color: teal;
+  color: orange;
   font-size: 64px;
   @media (max-width: ${br_tablet}) {
     font-size: 48px;

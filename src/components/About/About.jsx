@@ -7,7 +7,7 @@ import SectionTitle from "../Section/SectionTitle"
 
 const About = () => {
   return (
-    <Section backgroundColor="red">
+    <Section backgroundColor="white">
       <style.Container>
         <SectionTitle>Om Ask Attilla</SectionTitle>
         <p>

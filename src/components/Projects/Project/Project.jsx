@@ -8,9 +8,8 @@ const Project = ({ title, imageSrc, link }) => {
     <style.Container>
       <a href={link}>
         <style.ImageContainer>
-          <Image imgName={imageSrc} />
+          <Image imgName={imageSrc} alt={title} />
         </style.ImageContainer>
-        <h1>{title}</h1>
       </a>
     </style.Container>
   )

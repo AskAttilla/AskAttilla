@@ -26,9 +26,9 @@ const Image = ({ imgName }) => {
   }
   return (
     <Img
-      style={{ maxHeight: "100%" }}
       imgStyle={{ objectFit: "cover" }}
       fluid={image.node.fluid}
+      style={{ height: "100%" }}
     />
   )
 }

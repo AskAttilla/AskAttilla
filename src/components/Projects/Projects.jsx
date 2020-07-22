@@ -9,19 +9,21 @@ import Project from "./Project"
 const Projects = () => {
   return (
     <Section backgroundColor="white">
-      <SectionTitle>Nylige Prosjekter</SectionTitle>
-      <style.Container>
-        <Project
-          title="Steinhuset"
-          imageSrc="gatsby-astronaut.png"
-          link="https://steinhuset.org/"
-        />
-        <Project
-          title="Skogens Gull"
-          imageSrc="gatsby-astronaut.png"
-          link="https://www.skogensgull.com/"
-        />
-      </style.Container>
+      <style.Wrapper>
+        <SectionTitle>Nylige Prosjekter</SectionTitle>
+        <style.Container>
+          <Project
+            title="Steinhuset"
+            imageSrc="steinhusetfrontpage.png"
+            link="https://steinhuset.org/"
+          />
+          <Project
+            title="Skogens Gull"
+            imageSrc="skogensgullfrontpage.png"
+            link="https://www.skogensgull.com/"
+          />
+        </style.Container>
+      </style.Wrapper>
     </Section>
   )
 }

@@ -4,33 +4,56 @@ import { br_tablet, br_mobile } from "../../variables"
 
 export const Section = styled.section`
   width: 100%;
-  min-height: 60vh;
   background: ${props => props.backgroundColor || "whitesmoke"};
   display: flex;
   justify-content: center;
 `
 
 export const InnerSection = styled.div`
-  width: 80%;
+  width: 100%;
   max-width: 1280px;
   position: relative;
-  padding: 64px 0;
+  padding: 64px 10vw;
+  margin: 0;
+  padding: 64px;
+  display: flex;
+  align-items: center;
 
   @media (max-width: ${br_tablet}) {
     width: 90%;
+    padding: 50px 5vw;
   }
   @media (max-width: ${br_mobile}) {
     width: 95%;
   }
 `
 
+// Title
+
+export const TitleCover = styled.div`
+  width: fit-content;
+  margin-top: -50px;
+  margin-bottom: 100px;
+  ::before {
+    content: "";
+    display: block;
+    background: orange;
+    height: 50px;
+    transform: translate(30px, 75px);
+    mix-blend-mode: multiply;
+  }
+
+  @media (max-width: ${br_tablet}) {
+    margin-bottom: 50px;
+  }
+`
+
 export const Title = styled.h1`
-  font-size: 20px;
-  text-align: center;
+  font-size: 50px;
+  text-align: left;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
   font-weight: 100;
-  border-bottom: 1px solid black;
   padding-bottom: 15px;
-  width: 50%;
-  margin: 0 auto 50px auto;
 `

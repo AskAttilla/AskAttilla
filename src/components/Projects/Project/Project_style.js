@@ -6,6 +6,7 @@ export const Container = styled.div`
     text-decoration: none;
     color: black;
   }
+  box-shadow: 10px 50px 50px -50px rgba(0, 0, 0, 0.5);
 `
 
 export const ImageContainer = styled.div`

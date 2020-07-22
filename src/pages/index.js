@@ -1,13 +1,12 @@
 import React from "react"
 
 import Layout from "../layouts/layout"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 
 import Hero from "../components/Hero"
-import Mission from "../components/Mission"
 import Projects from "../components/Projects"
 import Services from "../components/Services"
-import About from "../components/About"
+import Contact from "../components/Contact"
 
 const IndexPage = () => (
   <Layout>
@@ -15,7 +14,7 @@ const IndexPage = () => (
     <Hero />
     <Projects />
     <Services />
-    <About />
+    <Contact />
   </Layout>
 )
 

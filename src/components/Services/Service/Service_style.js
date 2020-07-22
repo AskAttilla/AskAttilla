@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import { br_mobile, br_tablet } from "../../../variables"
+import { br_mobile, br_tablet } from "../../../utils/variables"
 
 export const Container = styled.div`
   padding: 10px;

@@ -8,9 +8,9 @@ import Project from "./Project"
 
 const Projects = () => {
   return (
-    <Section backgroundColor="white">
+    <Section backgroundColor="whitesmoke">
       <style.Wrapper>
-        <SectionTitle>Nylige Prosjekter</SectionTitle>
+        <SectionTitle>Prosjekter</SectionTitle>
         <style.Container>
           <Project
             title="Steinhuset"

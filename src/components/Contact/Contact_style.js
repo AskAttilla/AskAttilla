@@ -3,25 +3,30 @@ import styled from "styled-components"
 import { br_mobile, br_tablet } from "../../utils/variables"
 export const Container = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 64px 0;
-
+  width: 100%;
   h1 {
     text-align: center;
-    font-size: 64px;
-    font-weight: 400;
-    span {
-      color: teal;
-      font-style: italic;
+    font-size: 45px;
+    font-weight: 100;
+
+    a {
+      margin-top: 10px;
+      text-decoration: none;
+      color: orange;
+      :hover {
+        color: darkorange;
+      }
     }
 
     @media (max-width: ${br_tablet}) {
-      font-size: 48px;
+      font-size: 30px;
     }
     @media (max-width: ${br_mobile}) {
-      font-size: 28px;
+      font-size: 20px;
     }
   }
 `

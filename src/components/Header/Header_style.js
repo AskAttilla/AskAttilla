@@ -16,4 +16,9 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   font-size: 50px;
   margin-top: 10px;
+  transition: 300ms;
+
+  :hover {
+    color: orange;
+  }
 `

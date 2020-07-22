@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { br_tablet, br_mobile } from "../../variables"
+import { br_tablet, br_mobile } from "../../utils/variables"
 
 export const Section = styled.section`
   width: 100%;
@@ -13,15 +13,14 @@ export const InnerSection = styled.div`
   width: 100%;
   max-width: 1280px;
   position: relative;
-  padding: 64px 10vw;
   margin: 0;
-  padding: 64px;
+  padding: 200px 16px;
   display: flex;
   align-items: center;
 
   @media (max-width: ${br_tablet}) {
     width: 90%;
-    padding: 50px 5vw;
+    padding: 100px 5vw;
   }
   @media (max-width: ${br_mobile}) {
     width: 95%;
@@ -34,14 +33,6 @@ export const TitleCover = styled.div`
   width: fit-content;
   margin-top: -50px;
   margin-bottom: 100px;
-  ::before {
-    content: "";
-    display: block;
-    background: orange;
-    height: 50px;
-    transform: translate(30px, 75px);
-    mix-blend-mode: multiply;
-  }
 
   @media (max-width: ${br_tablet}) {
     margin-bottom: 50px;
@@ -56,4 +47,14 @@ export const Title = styled.h1`
   margin: 0;
   font-weight: 100;
   padding-bottom: 15px;
+`
+
+export const Underlay = styled.div`
+  width: 100%;
+  height: 50px;
+  border: 5px orange dashed;
+  margin: 0;
+  padding: 0;
+  margin-top: -35px;
+  margin-left: 5vw;
 `

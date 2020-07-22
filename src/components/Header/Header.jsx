@@ -1,6 +1,6 @@
 import React from "react"
 
-import * as style from "./Menu_style"
+import * as style from "./Header_style"
 
 const Menu = () => {
   return (

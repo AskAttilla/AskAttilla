@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { br_tablet } from "../../variables"
+import { br_tablet } from "../../utils/variables"
 
 export const servicesGrid = styled.div`
   max-width: 100%;

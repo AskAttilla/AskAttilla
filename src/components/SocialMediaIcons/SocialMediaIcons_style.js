@@ -1,16 +1,10 @@
 import styled from "styled-components"
 
-import { br_tablet } from "../../utils/variables"
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export const Container = styled.div`
   display: flex;
   justify-content: ${props => props.justify};
-
-  @media (max-width: ${br_tablet}) {
-    justify-content: flex-start;
-  }
 `
 
 export const StyledIcon = styled(FontAwesomeIcon)`

@@ -7,9 +7,9 @@ import * as style from "./Hero_style"
 import SocialMediaIcons from "../SocialMediaIcons"
 
 const Hero = () => {
-  /* const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "dress.png" }) {
+      placeholderImage: file(relativePath: { eq: "hero.png" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
@@ -17,7 +17,7 @@ const Hero = () => {
         }
       }
     }
-  `) */
+  `)
 
   return (
     <style.SectionContainer>
@@ -27,14 +27,14 @@ const Hero = () => {
           <h1>Webutvikler</h1>
           <style.Underlay />
         </style.Text>
-        <SocialMediaIcons jc="left" iconSize="50px" />
+        <SocialMediaIcons jc="flex-end" iconSize="50px" />
       </style.TextContainer>
-      {/*  <style.ImageContainer>
+      <style.ImageContainer>
         <Img
           fluid={data.placeholderImage.childImageSharp.fluid}
           objectFit="contain"
         />
-      </style.ImageContainer> */}
+      </style.ImageContainer>
     </style.SectionContainer>
   )
 }
